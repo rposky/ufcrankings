@@ -10,6 +10,17 @@ import sys
 import threading
 import time
 
+###########################################################################
+# Argument inputs include:
+#
+# input_file: A comma-separated list of fighter names and sherdog
+#             profile URLs with each fighter entry delineated by newline
+# alias_file: A comma-separated list of fighter names and their aliases
+#             with each fighter entry delineated by newline
+# sleep: Time to sleep between processing chunks of size 10
+#
+###########################################################################
+
 argument_parser = argparse.ArgumentParser(description='Compile UFC fighter rankings')
 argument_parser.add_argument('input_file', type=argparse.FileType('r'))
 argument_parser.add_argument('alias_file', type=argparse.FileType('r'))
