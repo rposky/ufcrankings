@@ -8,16 +8,16 @@ import threading
 import time
 from urllib.parse import urlparse
 
-################################################################################
+#####################################################################################
 # Argument inputs include:
 #
 # input_file: A list of search entries, separated by newline
-# context: An additional search value to append to all queries
-# domain: The sought site resource domain, used to filter viable search results
-# engine: The search engine to use
-# sleep: The length of time to pause between processing chunks of 10
+# context:    An additional search value to append to all queries
+# domain:     The sought site resource domain, used to filter viable search results
+# engine:     The search engine to use
+# sleep:       The length of time to pause between processing chunks of 10
 #
-#################################################################################
+######################################################################################
 
 argument_parser = argparse.ArgumentParser(description='Compile UFC fighter rankings')
 argument_parser.add_argument('input_file', type=argparse.FileType('r'))

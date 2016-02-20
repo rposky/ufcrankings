@@ -17,7 +17,7 @@ import time
 #             profile URLs with each fighter entry delineated by newline
 # alias_file: A comma-separated list of fighter names and their aliases
 #             with each fighter entry delineated by newline
-# sleep: Time to sleep between processing chunks of size 10
+# sleep:      Time to sleep between processing chunks of size 10
 #
 ###########################################################################
 
